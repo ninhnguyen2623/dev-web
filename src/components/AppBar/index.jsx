@@ -35,9 +35,9 @@ function AppBar() {
         <Recent/>
         <Starred/>
         <Templates/>
-        <Button variant="outlined">CREATE</Button>
+        <Button variant="outlined">Create</Button>
       </Box>
-      <Box sx={{ display: 'flex', alignItems: 'center', grap: 2 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', grap: 1 }}>
         <Box mx={2}>
           <TextField id="outlined-search" label="Search..." type="search" size='small' />
         </Box>
@@ -46,14 +46,14 @@ function AppBar() {
         </Box>
         <Box px={2} sx={{ display: 'flex', alignItems: 'center', grap: 2 }}>
           <Tooltip title="Notification" >
-            <Badge color="secondary" variant="dot">
-              <NotificationsNoneIcon/>
+            <Badge color="warning" variant="dot">
+              <NotificationsNoneIcon sx={{ color: 'primary.main' }}/>
             </Badge>
           </Tooltip>
         </Box>
         <Box px={2} sx={{ display: 'flex', alignItems: 'center', grap: 2 }}>
           <Tooltip title="Help" >
-            <HelpOutlineIcon/>
+            <HelpOutlineIcon sx={{ color: 'primary.main' }}/>
           </Tooltip>
         </Box>
         <Profiles/>

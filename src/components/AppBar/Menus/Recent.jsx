@@ -29,9 +29,8 @@ function Recent() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon/>}
-        
       >
-        RECENT
+        Recent
       </Button>
       <Menu
         id="basic-menu"
