@@ -38,7 +38,7 @@ function Profiles() {
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
         >
-          <Avatar sx={{ width: 32, height: 32 }}
+          <Avatar sx={{ width: 36, height: 36 }}
             alt='fume lovely'
             src='https://lh3.googleusercontent.com/a/ACg8ocKqDJhtx4m22bpNT8lGa-T-Cj0V6Z2A9oF6lrzyODjc1-BDBdJ5=s288-c-no'
           />

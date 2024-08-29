@@ -22,18 +22,33 @@ function ModeSelect() {
 
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-      <InputLabel id="label-select-drak-light-mode"> Mode </InputLabel>
+      <InputLabel 
+        id="label-select-drak-light-mode"
+        sx= {{
+          color: 'white',
+          '&.Mui-focused': { color: 'white' },
+
+        }}
+      >
+           Mode
+      </InputLabel>
       <Select
         labelId="label-select-drak-light-mode"
         id="select-drak-light-mode"
         value={mode}
-        label="Age"
+        label="Mode"
         onChange={handleChange}
+        sx={{
+          color: 'white',
+          '.MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
+          '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white'},
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: 'white'},
+          '.MuiSvgIcon-root': { color: 'white' }
+        }}
       >
         <MenuItem value='light'>
           <Box sx={{ display: 'flex', alignContent: 'center', gap: '8px' }}>
-            <InputLabel id="label-select-drak-light-mode"> <LightModeIcon fontSize='small'/>  </InputLabel>
-            <InputLabel id="label-select-drak-light-mode"> Light </InputLabel>
+            <LightModeIcon fontSize='small'/> Light
           </Box>
         </MenuItem>
         <MenuItem value='dark'>
